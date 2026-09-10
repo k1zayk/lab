@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кофейня Aroma</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">Aroma</div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link">Главная</a></li>
+                <li><a href="#menu" class="nav-link">Меню</a></li>
+                <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+            <button class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Встречайте каждый день с ароматом свежего кофе</h1>
+            <p class="hero-subtitle">Лучшие зерна из разных уголков мира</p>
+            <button class="cta-button">Наше меню</button>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Наше меню</h2>
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">Все</button>
+                <button class="filter-btn" data-category="coffee">Кофе</button>
+                <button class="filter-btn" data-category="tea">Чай</button>
+                <button class="filter-btn" data-category="desserts">Десерты</button>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-image"></div>
+                    <h3>Эспрессо</h3>
+                    <p>Классический крепкий кофе</p>
+                    <span class="price">150₽</span>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-image"></div>
+                    <h3>Капучино</h3>
+                    <p>Эспрессо с молочной пенкой</p>
+                    <span class="price">180₽</span>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-image"></div>
+                    <h3>Латте</h3>
+                    <p>Нежный кофе с молоком</p>
+                    <span class="price">200₽</span>
+                </div>
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-image"></div>
+                    <h3>Американо</h3>
+                    <p>Разбавленный эспрессо</p>
+                    <span class="price">140₽</span>
+                </div>
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-item-image"></div>
+                    <h3>Зелёный чай</h3>
+                    <p>Освежающий китайский чай</p>
+                    <span class="price">120₽</span>
+                </div>
+                <div class="menu-item" data-category="tea">
+                    <div class="menu-item-image"></div>
+                    <h3>Чёрный чай</h3>
+                    <p>Классический цейлонский</p>
+                    <span class="price">110₽</span>
+                </div>
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image"></div>
+                    <h3>Чизкейк</h3>
+                    <p>Нежный сырный десерт</p>
+                    <span class="price">250₽</span>
+                </div>
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image"></div>
+                    <h3>Тирамису</h3>
+                    <p>Итальянский десерт с кофе</p>
+                    <span class="price">280₽</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title">Атмосфера</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+                <div class="gallery-item"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Контакты</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h3>Адрес</h3>
+                        <p>ул. Пушкина, д. 42</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Телефон</h3>
+                        <p>+7 (495) 123-45-67</p>
+                    </div>
+                    <div class="contact-item">
+                        <h3>Время работы</h3>
+                        <p>Пн-Вс: 08:00 - 22:00</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Ваше имя" required>
+                    <input type="email" placeholder="Email" required>
+                    <textarea placeholder="Сообщение" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Aroma. Все права защищены</p>
+    </footer>
+
+    <script src="js.js"></script>
+</body>
+</html>
